@@ -1,7 +1,7 @@
 # learnyounode
 My completed exercises from the nodeschool.io learnyounode workshop.
-LearnYouNode Github page: https://github.com/workshopper/learnyounode
-NodeSchool.io: https://github.com/workshopper/learnyounode
+* LearnYouNode Github page: https://github.com/workshopper/learnyounode
+* NodeSchool.io: http://nodeschool.io/
 
 To install:
 ```
