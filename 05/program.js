@@ -26,9 +26,13 @@ var path = require('path');
 var files_arr = [];
 fs.readdir(process.argv[2], (err, list) => {
   if(err) throw err;
-  list.forEach(function(file) {
+  files_arr = list.filter(function(file) {
     if(path.extname(file) === '.' + process.argv[3]) {
-      console.log(file);
+      return file;
     }
   });
+
+  files_arr.forEach(function(file) {
+    console.log(file);
+  })
 });

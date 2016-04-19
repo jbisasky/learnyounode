@@ -22,11 +22,13 @@ function filterDirRe(dir, ext) {
 }
 
 function filterDir(dir, ext, callback) {
-  var files_arr = [];
+  //
+  // callback function: need to pass in (err, list)
 
+  var files_arr = [];
   fs.readdir(dir, (err, list) => {
     if(err) {
-      return callback(err);
+      return callback(err, []); // list is optional
     }
 
     list = list.filter(function(file) {
